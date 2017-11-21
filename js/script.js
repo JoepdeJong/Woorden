@@ -69,12 +69,16 @@ $(document).ready(function(){
       questions[currentQuestion] = null;
       correctCount++;
       $('#correctCount').text(correctCount);
-      $('#correctQuestion').text('');
-      $('#correctAnswer').text('');
+      $('#correctQuestion').text(current.question);
+      $('#correctAnswer').text(current.answer);
+      $('.message').addClass('success');
+      $('.message').fadeIn();
       previousWrong = false;
     } else {
       $('#correctQuestion').text(current.question);
       $('#correctAnswer').text(current.answer);
+      $('.message').removeClass('success');
+      $('.message').fadeIn();
       previousWrong = true;
     }
     $('#input').val('');
@@ -87,6 +91,7 @@ $(document).ready(function(){
       questions[previousQuestion] = null;
       correctCount++;
       $('#correctCount').text(correctCount);
+      $('.message').addClass('success');
       // $('#correctQuestion').text('');
       // $('#correctAnswer').text('');
       $('#previous').fadeOut('fast');

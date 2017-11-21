@@ -42,12 +42,21 @@ body {
 }
 
 .stats {
-	#correctQuestion {
-		font-size: 20px;
-		font-weight: bold;
-	}
-	#correctAnswer {
-		font-size: 16px;
+	.message {
+		&.success {
+			background-color: #8dbe7a;
+		}
+		background-color: #be423b;
+		#correctQuestion {
+			font-size: 20px;
+			font-weight: bold;
+		}
+		#correctAnswer {
+			font-size: 16px;
+		}
+		padding: 15px;
+		display: none;
+		transition: background 0.25s ease-in-out;
 	}
 	padding-top: 30px;
 }
