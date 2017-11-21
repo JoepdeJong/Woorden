@@ -64,7 +64,7 @@ $(document).ready(function(){
   function check(){
     var answer = $('#input').val();
     var current = questions[currentQuestion];
-    if($.trim(answer) == current.answer){
+    if($.trim(answer).toLowerCase() == current.answer.toLowerCase()){
       // questions.splice(currentQuestion, 1);
       questions[currentQuestion] = null;
       correctCount++;
@@ -120,6 +120,7 @@ $(document).ready(function(){
 
   function showQuestion(){
     $('#question').text(questions[currentQuestion].question);
+    $('#comment').text(questions[currentQuestion].comment);
 
     if(previousWrong){
       $('#previous').fadeIn('fast');
