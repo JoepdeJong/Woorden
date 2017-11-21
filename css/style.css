@@ -1,0 +1,10 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #1b222a;
+	height: 100%;
+}
+
+.page {
+	position: fixed;
+}

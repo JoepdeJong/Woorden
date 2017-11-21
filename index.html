@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"/>
+		<link rel="stylesheet/less" type="text/css" href="css/main.less" />
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700" rel="stylesheet">
+		
+		<script src="js/less.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<!-- <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script> -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+		<script src="js/script.js"></script>
+
+	</head>
+	<body>
+		<div class="container-fluid page">
+			<div class="row dark questions">
+				<div class="col-md-8 offset-md-2">
+					<textarea id="questions" rows="10" placeholder="Pleur hier je woorden in dit formaat: Woord A = Woord B {Opmerking}">
+Αγαμέμνων, -ονος = Agamemnon, opperbevelhebber van het Griekse leger voor Troje { test }
+ö άγγελος = bode
+άγριος = wild, ruw, woest
+ó αγρός = akker, veld, land
+άγω = leiden, voeren, brengen
+άεί = altijd, steeds
+άθάνατος = onsterfelijk
+Άθήνη = (Pallas) Athena, godin die Odysseus beschermt en helpt; godin van het handwerk
+Αϊγισθος = Aegisthus, minnaar van Agamemnons vrouw Clytaemnestra
+αίέν/αίεί = altijd {=άεί}
+τό αίμα,-ατος = bloed
+αίνος = verschrikkelijk, vreselijk
+αίρέω = nemen, innemen, pakken, vangen
+αίτέω = vragen, eisen</textarea>
+					
+					<button class="wd-button wd-start">Oefening starten</button>
+				</div>
+			</div>
+			<div class="test">
+				<div class="row dark">
+					<div class="col-md-8 offset-md-2">
+						<div class="question" id="question">
+							άνίσταμαι
+						</div>
+					</div>
+				</div>
+				<div class="row form">
+					<div class="col-md-8 offset-md-2">
+						<form class="wd-form" id="form">
+							<input type="text" id="input" class="wd-input" placeholder="Betekenis..."/>
+							<div class="row">
+								<div class="col-md-6">
+									<button type="button" class="wd-button wd-submit" id="check">Versturen</button>
+								</div>
+								<div class="col-md-6">
+									<button type="button" class="wd-button wd-previous" id="previous">Vorige antwoord was goed</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="row stats">
+					<div class="col-md-6 offset-md-2">
+						<div id="correctQuestion"></div>
+						<div id="correctAnswer"></div>
+					</div>
+					<div class="col-md-2">
+						<div class="questionCount"><span id="questionCount">0</span> vragen gehad</div>
+						<div class="correctCount"><span id="correctCount">0</span> goed beantwoord</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<span class="version">Alpha 1.0.0</span>
+	</body>
+</html>

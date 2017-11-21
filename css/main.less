@@ -1,0 +1,92 @@
+html, body, .page {
+	height: 100%;
+}
+
+body {
+	background-color: #F7F8F8;
+}
+
+
+.row {
+	&.dark {
+		.wd-button {
+			background-color: #E1CE7A;
+		}
+		background-color: #424B54;
+	}
+}
+.question {
+	font-size: 30px;
+	font-weight: bold;
+	color: #E1CE7A;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.questions {
+	textarea {
+		width: 100%;
+		border: 0px;
+		font-size: 18px;
+	}
+	padding-top: 30px;
+	padding-bottom: 30px;
+	height: 100%;
+}
+
+.stats {
+	#correctQuestion {
+		font-size: 20px;
+		font-weight: bold;
+	}
+	#correctAnswer {
+		font-size: 16px;
+	}
+	padding-top: 30px;
+}
+
+.wd-button {
+	&:hover {
+		opacity: 0.8;
+	}
+	width: 100%;
+	background-color: #424B54;
+	color: #ffffff;
+	padding: 15px;
+	font-size: 30px;
+	border: 0px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	cursor: pointer;
+}
+.wd-submit {
+	background-color: #E1CE7A;
+}
+.wd-input {
+	&::placeholder {
+		color: #D8DBDB;
+	}
+	&:focus {
+		outline: none;
+	}
+	width: 100%;
+	font-size: 40px;
+	color: #5A6768;
+	border: 0px;
+	font-weight: bold;
+	background-color: transparent;
+}
+.wd-form { 
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.test, #previous {
+	display: none;
+}
+
+.version {
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+}
