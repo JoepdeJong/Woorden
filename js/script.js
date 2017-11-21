@@ -27,6 +27,7 @@ $(document).ready(function(){
           }
       });
     newWord(false);
+    $('#totalCount').text(questions.length);
     $('.questions').slideUp('fast', function(){
       $('.test').slideDown('fast');
     });
