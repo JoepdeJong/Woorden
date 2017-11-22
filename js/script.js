@@ -33,6 +33,13 @@ $(document).ready(function(){
     });
   });
 
+  $(document).bind('keypress', function(event) {
+      if( event.which === 43 && event.shiftKey ) {
+        previousCorrect();
+        event.preventDefault();
+      }
+  });
+
   $('#form').on('submit', function(e) { //use on if jQuery 1.7+
         e.preventDefault();  //prevent form from submitting
         newWord();
